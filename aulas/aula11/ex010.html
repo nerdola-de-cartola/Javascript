@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed test</title>
+    <style>
+        p.mult strong {
+            text-transform: uppercase;
+            bold
+        }
+    </style>
+</head>
+<body>
+    <h1>Test your speed</h1>
+
+    <input type="number" id="text">
+    <input type="button" value="Test" onclick="measure()" >
+    <div id="results">
+
+    </div>
+
+    <script>
+        function measure() {
+
+            var speed = Number(window.document.querySelector('input#text').value)
+            var results = window.document.querySelector('div#results')
+            var limit = 80
+            results.innerHTML = `<p id="1" >Sua velocidade atual é de <strong>${speed} Km/h</strong></p>`
+            results.innerHTML += `<p>O limite de velocidade é de <strong>${limit} Km/h</strong></p>`
+
+            if (speed > limit) {
+                results.innerHTML += `<p class="mult">Você ultrapassou o limite de velocidade, você será <strong>multado</strong></p>`
+            }
+  
+        }  
+
+
+
+
+    </script>
+    
+</body>
+</html>

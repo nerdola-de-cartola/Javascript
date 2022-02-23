@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Here you can find out your nationality</h1>
+    <p>Were you born ?</p>
+    <input type="text" id="homeland" >
+    <input type="button" value="Confirm" onclick="confirm()">
+    <div id="answer"></div>
+    <script>
+        
+        function confirm() {
+
+        var country = document.getElementById('homeland')
+        var answer = document.getElementById('answer')
+        
+        if (country == 'Brasil') {
+            answer.innerHTML = `<p>Então você é brasileiro</p>`
+        } 
+        else {
+            answer.innerHTML = `<p>Então você é estrangeiro</p>`
+        }
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>

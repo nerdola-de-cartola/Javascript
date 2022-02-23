@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(70, 142, 236);
+    font: 15pt Arial;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.290);
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+div.data {
+    justify-content: left;
+    height: 152px;
+}
+
+input {
+    margin: 8px 5px;
+}
+
+input#end {
+    margin: 8px 27px 
+}
+
+input#begin {
+    margin: 8px 12px;
+}
+
+input#count_button {
+    position: relative;
+    bottom: 114px;
+    left: 280px;
+    width: 200px;
+    height: 98px;
+    background-color: lightsteelblue;
+    border-radius: 19px;
+    border-color: rgb(100, 100, 100);
+    font-size: 17pt;
+    box-shadow: 3px 3px 0px 1px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+div#results p {
+    margin: 5px;
+}
